@@ -1,5 +1,5 @@
 //
-//Program_Name: SimsponIsTired
+//Program_Name: SimpsonIsTired
 //Programmer_Name:Ko Yat Chan
 //Purpose: To draw my favourite Cartoon Character
 //
@@ -180,7 +180,8 @@ fill(255);
 //Mhair//
 
 //tophair
-  noFill();
+  //noFill();
+  stroke(255);
   bezier(217, 40, 193, 0, 110, 12, 137, 79);
   bezier(218, 41, 193, 0, 110, 12, 136, 78);
   bezier(254, 35, 229, 0, 153, 0, 160, 67);
@@ -190,19 +191,19 @@ fill(255);
 //text
   PFont f;
     f = loadFont("Sim2.vlw");
-  String s = " SIMSPON ";
+  String s = " SIMPSON ";
   String mysignature = "KYC";
   fill(random(0, 255), random (0, 255), random(0,100));
   
   float x = 400;
   textFont(f);
   textSize (random(46, 48));
-  text(s, x, x );
+  text(s, x, x);
   
-  fill(0);
+  fill(102);
   textSize(48);
   for (int i = 0; i < mysignature.length(); i++) {
-  text(mysignature.charAt(i), 665, 470 );
+  text(mysignature.charAt(i), 660, 455 );
   }
 //text
 }
